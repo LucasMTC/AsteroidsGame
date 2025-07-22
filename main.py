@@ -34,6 +34,11 @@ def main():
             if a.colide(player):
                 print("Game Over!")
                 return
+            for s in shots:
+                if a.colide(s):
+                    a.split()
+                    s.kill()
+
         
         screen.fill("BLACK")
         
