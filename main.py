@@ -27,6 +27,10 @@ def main():
                 return
         
         updatable.update(dt)
+        for a in asteroids:
+            if a.colide(player):
+                print("Game Over!")
+                return
         
         screen.fill("BLACK")
         
